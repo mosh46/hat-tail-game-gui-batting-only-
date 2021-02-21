@@ -16,7 +16,7 @@ def done():
 		tmsg.showinfo('out', 'you are out')
 		out = (True)
 		time.sleep(1)
-		root.destroy()
+	        quit()
 	else:
 		tmsg.showinfo('status', f'you have choosed {choice.get()} \nand computer choosed {comp}')
 	global last
