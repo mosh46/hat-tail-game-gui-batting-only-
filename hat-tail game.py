@@ -8,8 +8,6 @@ root = Tk()
 def done():
 	
 	score.append(int(choice.get()))
-#	strings = [str(sc) for sc in score]
-#	a_string = "".join(strings)
 	current = sum(score)	
 	total = IntVar()
 	total = int(current)
@@ -17,16 +15,13 @@ def done():
 	if comp == int(choice.get()):
 		tmsg.showinfo('out', 'you are out')
 		out = (True)
-#		root.update_idletasks()
 		time.sleep(1)
 		root.destroy()
 	else:
 		tmsg.showinfo('status', f'you have choosed {choice.get()} \nand computer choosed {comp}')
-	#last_choice = choice.get()
 	global last
 	c = choice.get()
 	last.set(f'last choice : {c}')
-	#global total
 	t = total
 	totals.set(f'total : {t}')
 	root.update_idletasks()
@@ -72,7 +67,6 @@ root.configure(bg = 'red')
 root.mainloop()
 
 if __name__ == '__main__':
-#	out = out.get()
 	while out == False:
 		root.mainloop()
 		
